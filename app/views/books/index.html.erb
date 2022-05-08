@@ -1,22 +1,16 @@
 <h1>Books</h1>
-<table >
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <div class="book-wrap">
-      <% @books.each do |book| %>
-      <div class="book_comment">
-        <span class="book_title"><%= book.title %></span>
-        <span class="book_body"><%= book.body %></span>
-      </div>
-    </div>
-    <% end %>
-</table>
+
+<%= @books.each do |book| %>
+
+<p>Title</p>
+<span><%= book.title %></span>
+
+<p>Body</p>
+<span><%= book.body %></span>
+
+<% end %>
+
+
 
 <h2>New book</h2>
 
